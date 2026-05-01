@@ -47,6 +47,7 @@ public class InstallConfirmationFragment extends BaseDialogFragment {
         if (!mDialogData.getSkipCreate()) {
             mCheckBox.setText(R.string.set_installer);
             mCheckBox.setVisibility(View.VISIBLE);
+            mCheckBox.setChecked(true);
         }
 
         var sb = new SpannableStringBuilder();
