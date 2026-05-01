@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.model
+package io.github.peppergrayxyz.psg1packageinstaller.model
 
 import android.content.res.Resources
 import android.graphics.drawable.Drawable

@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.receiver
+package io.github.peppergrayxyz.psg1packageinstaller.receiver
 
 import android.app.PendingIntent
 import android.content.BroadcastReceiver

@@ -1,4 +1,4 @@
-Shizuku Package Installer
+PSG1 Shizuku Package Installer
 ========================
 A lightweight yet powerful package installer for Android.
 

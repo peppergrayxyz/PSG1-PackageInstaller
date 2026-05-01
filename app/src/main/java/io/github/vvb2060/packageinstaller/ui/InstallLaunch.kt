@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.ui
+package io.github.peppergrayxyz.psg1packageinstaller.ui
 
 import android.os.Bundle
 import android.view.Window
@@ -8,22 +8,22 @@ import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentFactory
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProvider
-import io.github.vvb2060.packageinstaller.model.InstallAborted
-import io.github.vvb2060.packageinstaller.model.InstallFailed
-import io.github.vvb2060.packageinstaller.model.InstallInstalling
-import io.github.vvb2060.packageinstaller.model.InstallStage
-import io.github.vvb2060.packageinstaller.model.InstallSuccess
-import io.github.vvb2060.packageinstaller.model.InstallUserAction
-import io.github.vvb2060.packageinstaller.model.PackageUserAction
-import io.github.vvb2060.packageinstaller.ui.fragments.ArchiveConfirmationFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.BaseDialogFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.InstallConfirmationFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.InstallErrorFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.InstallFailedFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.InstallInstallingFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.InstallParseFragment
-import io.github.vvb2060.packageinstaller.ui.fragments.InstallSuccessFragment
-import io.github.vvb2060.packageinstaller.viewmodel.InstallViewModel
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallFailed
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallInstalling
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallStage
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallSuccess
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallUserAction
+import io.github.peppergrayxyz.psg1packageinstaller.model.PackageUserAction
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.ArchiveConfirmationFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.BaseDialogFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.InstallConfirmationFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.InstallErrorFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.InstallFailedFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.InstallInstallingFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.InstallParseFragment
+import io.github.peppergrayxyz.psg1packageinstaller.ui.fragments.InstallSuccessFragment
+import io.github.peppergrayxyz.psg1packageinstaller.viewmodel.InstallViewModel
 import java.lang.reflect.Constructor
 
 class InstallLaunch : FragmentActivity() {

@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.viewmodel
+package io.github.peppergrayxyz.psg1packageinstaller.viewmodel
 
 import android.annotation.SuppressLint
 import android.app.Application
@@ -7,8 +7,8 @@ import android.content.pm.PackageInfo
 import androidx.arch.core.executor.ArchTaskExecutor
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import io.github.vvb2060.packageinstaller.model.InstallRepository
-import io.github.vvb2060.packageinstaller.model.InstallStage
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallRepository
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallStage
 
 @SuppressLint("RestrictedApi")
 class InstallViewModel(application: Application) : AndroidViewModel(application) {

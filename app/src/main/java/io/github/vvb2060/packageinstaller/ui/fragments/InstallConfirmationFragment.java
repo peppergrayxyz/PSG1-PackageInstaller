@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.ui.fragments;
+package io.github.peppergrayxyz.psg1packageinstaller.ui.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -21,9 +21,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import io.github.vvb2060.packageinstaller.BuildConfig;
-import io.github.vvb2060.packageinstaller.R;
-import io.github.vvb2060.packageinstaller.model.InstallUserAction;
+import io.github.peppergrayxyz.psg1packageinstaller.BuildConfig;
+import io.github.peppergrayxyz.psg1packageinstaller.R;
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallUserAction;
 
 public class InstallConfirmationFragment extends BaseDialogFragment {
 

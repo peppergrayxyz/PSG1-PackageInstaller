@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.model
+package io.github.peppergrayxyz.psg1packageinstaller.model
 
 import android.Manifest
 import android.app.Application
@@ -28,16 +28,16 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.net.toUri
 import androidx.lifecycle.MutableLiveData
-import io.github.vvb2060.packageinstaller.R
-import io.github.vvb2060.packageinstaller.model.Hook.wrap
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_CLOSE
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_CREATE
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_INFO
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_NOTFOUND
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_PARSE
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_SHIZUKU
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_SPLIT
-import io.github.vvb2060.packageinstaller.model.InstallAborted.Companion.ABORT_WRITE
+import io.github.peppergrayxyz.psg1packageinstaller.R
+import io.github.peppergrayxyz.psg1packageinstaller.model.Hook.wrap
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_CLOSE
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_CREATE
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_INFO
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_NOTFOUND
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_PARSE
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_SHIZUKU
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_SPLIT
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallAborted.Companion.ABORT_WRITE
 import rikka.shizuku.Shizuku
 import rikka.shizuku.ShizukuProvider
 import java.io.File
@@ -323,12 +323,7 @@ class InstallRepository(private val context: Application) {
         val params = SessionParams(mode)
         var installer = context.packageName
         if (setInstaller) {
-            try {
-                packageManager.getPackageInfo("com.android.vending", PackageManager.MATCH_SYSTEM_ONLY)
-                installer = "com.android.vending"
-            } catch (_: PackageManager.NameNotFoundException) {
-                installer = "com.android.shell"
-            }
+            installer = "com.playsolana.echos"
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 params.setPackageSource(PackageInstaller.PACKAGE_SOURCE_STORE)
             }

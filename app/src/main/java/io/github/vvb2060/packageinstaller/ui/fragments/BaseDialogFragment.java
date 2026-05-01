@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.ui.fragments;
+package io.github.peppergrayxyz.psg1packageinstaller.ui.fragments;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import io.github.vvb2060.packageinstaller.model.InstallStage;
-import io.github.vvb2060.packageinstaller.viewmodel.InstallViewModel;
+import io.github.peppergrayxyz.psg1packageinstaller.model.InstallStage;
+import io.github.peppergrayxyz.psg1packageinstaller.viewmodel.InstallViewModel;
 
 public class BaseDialogFragment extends DialogFragment {
 

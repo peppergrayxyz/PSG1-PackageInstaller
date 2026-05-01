@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Shizuku installer</string>
+    <string name="app_name">PSG1 Shizuku installer</string>
 
     <string name="install">Install</string>
     <string name="update">Update</string>

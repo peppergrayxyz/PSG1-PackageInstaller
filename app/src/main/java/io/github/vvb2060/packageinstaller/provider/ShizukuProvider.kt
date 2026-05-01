@@ -1,8 +1,8 @@
-package io.github.vvb2060.packageinstaller.provider
+package io.github.peppergrayxyz.psg1packageinstaller.provider
 
 import android.content.pm.PackageManager
-import io.github.vvb2060.packageinstaller.model.Hook
-import io.github.vvb2060.packageinstaller.model.PreferredActivity
+import io.github.peppergrayxyz.psg1packageinstaller.model.Hook
+import io.github.peppergrayxyz.psg1packageinstaller.model.PreferredActivity
 import rikka.shizuku.Shizuku
 
 class ShizukuProvider : rikka.shizuku.ShizukuProvider() {

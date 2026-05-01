@@ -1,4 +1,4 @@
-package io.github.vvb2060.packageinstaller.model
+package io.github.peppergrayxyz.psg1packageinstaller.model
 
 import android.content.ComponentName
 import android.content.ContentResolver
@@ -11,8 +11,8 @@ import android.os.Build
 import android.system.Os
 import android.util.Log
 import android.util.LogPrinter
-import io.github.vvb2060.packageinstaller.BuildConfig
-import io.github.vvb2060.packageinstaller.ui.InstallLaunch
+import io.github.peppergrayxyz.psg1packageinstaller.BuildConfig
+import io.github.peppergrayxyz.psg1packageinstaller.ui.InstallLaunch
 
 object PreferredActivity {
     private const val TAG = "PreferredActivity"
