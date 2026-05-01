@@ -57,9 +57,9 @@ public class InstallConfirmationFragment extends BaseDialogFragment {
             var flags = old.applicationInfo.flags;
             var installer = BuildConfig.APPLICATION_ID.equals(old.sharedUserId);
             var installed = (flags & ApplicationInfo.FLAG_INSTALLED) != 0;
-            if (!installer && savedInstanceState == null) {
+            //if (!installer && savedInstanceState == null) {
                 mCheckBox.setChecked(true);
-            }
+            //}
             if (installed) {
                 question = R.string.install_confirm_question_update;
             }
