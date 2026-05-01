@@ -17,7 +17,7 @@
 }
 -dontwarn dalvik.system.VMRuntime
 
--keepclassmembers class io.github.vvb2060.packageinstaller.viewmodel.InstallViewModel {
+-keepclassmembers class io.github.peppergrayxyz.psg1packageinstaller.viewmodel.InstallViewModel {
     <init>(android.app.Application);
 }
 -keepnames class moe.shizuku.api.BinderContainer

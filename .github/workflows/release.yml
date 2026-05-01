@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  workflow_run:
+    workflows: ["Build"]
+    types:
+      - completed
+    branches:
+      - master
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push'
+
+    steps:
+      - name: Download Ubuntu artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ubuntu-latest-artifact
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+          path: artifact
+
+      - name: Rename APK
+        shell: bash
+        run: |
+          cp artifact/apk/release/app-release.apk psg1_packageinstaller.apk
+          ls -lah psg1_packageinstaller.apk
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          RUN_NUMBER: ${{ github.event.workflow_run.run_number }}
+        shell: bash
+        run: |
+          TAG="main-${RUN_NUMBER}-${SHA::7}"
+
+          gh release create "$TAG" psg1_packageinstaller.apk \
+            --repo "$GH_REPO" \
+            --target "$SHA" \
+            --title "Release $TAG" \
+            --notes "Automated release from successful main build.
+
+          Commit: $SHA"

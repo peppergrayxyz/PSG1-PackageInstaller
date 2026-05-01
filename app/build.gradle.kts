@@ -18,7 +18,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.vvb2060.packageinstaller"
+    namespace = "io.github.peppergrayxyz.psg1packageinstaller"
     defaultConfig {
         versionCode = 8
         versionName = "1.7"
@@ -101,7 +101,7 @@ abstract class ClassVisitorFactory : AsmClassVisitorFactory<InstrumentationParam
     }
 
     override fun isInstrumentable(classData: ClassData): Boolean {
-        return classData.className.startsWith("io.github.vvb2060.packageinstaller.model.")
+        return classData.className.startsWith("io.github.peppergrayxyz.psg1packageinstaller.model.")
     }
 }
 
